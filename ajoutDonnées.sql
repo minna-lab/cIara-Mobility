@@ -45,12 +45,12 @@ INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) 
 -- ajoute vehicule a toulouse
 INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
 ('Dacia', 'Duster', 'Voiture thermique', 230, 'Disponible', 'Toulouse'),
-('MG', 'ZS EV', 'Voiture électrique', 440, 'Disponible', 'Toulouse'),
+('MG', 'ZS EV', 'Voiture électrique', 440, 'Disponible', 'Toulouse');
 
 -- et vehicule a bordeaux
 INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
 ('Opel', 'Corsa-e', 'Voiture électrique', 337, 'Disponible', 'Bordeaux'),
-('Ford', 'Focus', 'Voiture thermique', 400, 'Disponible', 'Bordeaux');
+('Ford', 'Focus', 'Voiture thermique', 400, 'Disponible', 'Bordeaux'),
 ('BMW', 'iX3', 'Voiture électrique', 460, 'Disponible', 'Bordeaux'),
 ('Renault', 'Captur', 'Voiture thermique', 300, 'Disponible', 'Bordeaux');
 
