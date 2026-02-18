@@ -20,6 +20,7 @@ INSERT INTO station (nom, ville) VALUES
 ('Place de la Bourse', 'Bordeaux'),
 ('Victoire', 'Bordeaux');
 
+-- ca c'est des vehicule a paris
 INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
 ('Renault', 'Zoe', 'Voiture électrique', 395, 'Disponible', 'Paris'),
 ('Peugeot', '2008', 'Voiture thermique', 340, 'Disponible', 'Paris'),
@@ -28,7 +29,7 @@ INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) 
 ('BMW', 'i3', 'Voiture électrique', 260, 'En maintenance', 'Paris'),
 ('Renault', 'Kangoo', 'voiture thermique', 270, 'Disponible', 'Paris');
 
-
+-- ca c'est des vehicule a lyon
 INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
 ('Renault', 'Twingo', 'Voiture thermique', 190, 'Disponible', 'Lyon'),
 ('Nissan', 'Leaf', 'Voiture électrique', 385, 'Disponible', 'Lyon'),
@@ -36,14 +37,17 @@ INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) 
 ('audi', 'R8', 'Voiture thermique', 330, 'Disponible', 'Lyon'),
 ('Citroën', 'Berlingo', 'Voiture thermique', 300, 'Disponible', 'Lyon');
 
+-- ca c'est des vehicule a marseille
 INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
 ('Fiat', '500', 'Voiture thermique', 320, 'Disponible', 'Marseille'),
 ('Hyundai', 'Kona Electric', 'Voiture électrique', 484, 'Disponible', 'Marseille'),
 
+-- ajoute vehicule a toulouse
 INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
 ('Dacia', 'Duster', 'Voiture thermique', 230, 'Disponible', 'Toulouse'),
 ('MG', 'ZS EV', 'Voiture électrique', 440, 'Disponible', 'Toulouse'),
 
+-- et vehicule a bordeaux
 INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
 ('Opel', 'Corsa-e', 'Voiture électrique', 337, 'Disponible', 'Bordeaux'),
 ('Ford', 'Focus', 'Voiture thermique', 400, 'Disponible', 'Bordeaux');
@@ -72,11 +76,7 @@ INSERT INTO client (nom, prenom, email) VALUES
 ('Girard', 'Sarah', 'sarah.girard@email.fr'),
 ('Bonnet', 'Raphaël', 'raphael.bonnet@email.fr');
 
--- ============================================
--- 4. INSERTION DES LOCATIONS
--- ============================================
 
--- Locations terminées (historique)
 INSERT INTO location (date_debut, date_fin, id_client, id_vehicule, id_station_depart, id_station_arrivee) VALUES 
 -- Paris
 ('2026-01-15 08:30:00', '2026-01-15 09:15:00', 1, 1, 1, 2),
@@ -111,13 +111,3 @@ INSERT INTO location (date_debut, date_fin, id_client, id_vehicule, id_station_d
 ('2026-02-18 09:30:00', '2026-02-18 10:00:00', 19, 9, 4, 1),
 ('2026-02-18 07:45:00', '2026-02-18 19:00:00', 20, 14, 6, 8),
 ('2026-02-18 10:15:00', '2026-02-18 10:45:00', 1, 21, 10, 13);
-
--- ============================================
--- FIN DES INSERTIONS
--- ============================================
-
--- Vérification des données insérées
-SELECT 'Nombre de stations:', COUNT(*) FROM station;
-SELECT 'Nombre de véhicules:', COUNT(*) FROM vehicule;
-SELECT 'Nombre de clients:', COUNT(*) FROM client;
-SELECT 'Nombre de locations:', COUNT(*) FROM location;
