@@ -1,6 +1,6 @@
--- =====================================
+
 -- Données de test cIara Mobility
--- =====================================
+
 
 INSERT INTO station (nom, ville) VALUES 
 ('Gare Centrale', 'Paris'),
