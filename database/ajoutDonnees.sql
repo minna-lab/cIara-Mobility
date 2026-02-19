@@ -2,60 +2,30 @@
 -- Données de test cIara Mobility
 
 
-INSERT INTO station (nom, ville) VALUES 
+-- Stations (2 par ville)
+INSERT INTO station (nom, ville) VALUES
 ('Gare Centrale', 'Paris'),
-('Place de la République', 'Paris'),
-('Quartier Latin', 'Paris'),
-('Montmartre', 'Paris'),
-('La Défense', 'Paris'),
-('Gare Part-Dieu', 'Lyon'),
+('République', 'Paris'),
+('Part-Dieu', 'Lyon'),
 ('Bellecour', 'Lyon'),
-('Vieux Lyon', 'Lyon'),
-('Confluence', 'Lyon'),
-('Gare Saint-Charles', 'Marseille'),
-('Vieux Port', 'Marseille'),
-('Castellane', 'Marseille'),
-('Prado', 'Marseille'),
-('Place du Capitole', 'Toulouse'),
+('Saint-Charles', 'Marseille'),
+('Vieux-Port', 'Marseille'),
+('Capitole', 'Toulouse'),
 ('Jean Jaurès', 'Toulouse'),
-('Esquirol', 'Toulouse'),
-('Gare de Bordeaux', 'Bordeaux'),
+('Masséna', 'Nice'),
+('Promenade des Anglais', 'Nice'),
+('Lille Flandres', 'Lille'),
+('Grand Place', 'Lille'),
+('Gare Saint-Jean', 'Bordeaux'),
 ('Place de la Bourse', 'Bordeaux'),
-('Victoire', 'Bordeaux');
+('Gare Sud', 'Nantes'),
+('Commerce', 'Nantes'),
+('Saint-Roch', 'Montpellier'),
+('Comédie', 'Montpellier'),
+('Gare Centrale', 'Strasbourg'),
+('Petite France', 'Strasbourg');
 
--- Véhicules Paris
-INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
-('Renault', 'Zoe', 'Voiture thermique', 395, 'Disponible', 'Paris'),
-('Peugeot', '2008', 'Voiture thermique', 340, 'Disponible', 'Paris'),
-('Tesla', 'Model 3', 'Voiture électrique', 491, 'En location', 'Paris'),
-('Citroën', 'C4', 'Voiture thermique', 357, 'Disponible', 'Paris'),
-('BMW', 'i3', 'Voiture électrique', 260, 'En maintenance', 'Paris'),
-('Renault', 'Kangoo', 'Voiture thermique', 270, 'Disponible', 'Paris');
 
--- Véhicules Lyon
-INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
-('Renault', 'Twingo', 'Voiture thermique', 190, 'Disponible', 'Lyon'),
-('Nissan', 'Leaf', 'Voiture électrique', 385, 'Disponible', 'Lyon'),
-('Volkswagen', 'ID.3', 'Voiture électrique', 425, 'En location', 'Lyon'),
-('Audi', 'R8', 'Voiture thermique', 330, 'Disponible', 'Lyon'),
-('Citroën', 'Berlingo', 'Voiture thermique', 300, 'Disponible', 'Lyon');
-
--- Véhicules Marseille
-INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
-('Fiat', '500', 'Voiture thermique', 320, 'Disponible', 'Marseille'),
-('Hyundai', 'Kona Electric', 'Voiture électrique', 484, 'Disponible', 'Marseille');
-
--- Véhicules Toulouse
-INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
-('Dacia', 'Duster', 'Voiture thermique', 230, 'Disponible', 'Toulouse'),
-('MG', 'ZS EV', 'Voiture électrique', 440, 'Disponible', 'Toulouse');
-
--- Véhicules Bordeaux
-INSERT INTO vehicule (marque, modele, type_vehicule, autonomie_km, etat, ville) VALUES 
-('Opel', 'Corsa-e', 'Voiture électrique', 337, 'Disponible', 'Bordeaux'),
-('Ford', 'Focus', 'Voiture thermique', 400, 'Disponible', 'Bordeaux'),
-('BMW', 'iX3', 'Voiture électrique', 460, 'Disponible', 'Bordeaux'),
-('Renault', 'Captur', 'Voiture thermique', 300, 'Disponible', 'Bordeaux');
 
 -- Clients
 INSERT INTO client (nom, prenom, email) VALUES 
@@ -79,3 +49,27 @@ INSERT INTO client (nom, prenom, email) VALUES
 ('Fournier', 'Arthur', 'arthur.fournier@email.fr'),
 ('Girard', 'Sarah', 'sarah.girard@email.fr'),
 ('Bonnet', 'Raphaël', 'raphael.bonnet@email.fr');
+ 
+ -- Locations
+ INSERT INTO location (date_debut, date_fin, id_client, id_vehicule, id_station_depart, id_station_arrivee)
+VALUES
+('2026-02-01', '2026-02-03', 1, 1, 1, 2),
+('2026-02-05', '2026-02-06', 2, 2, 3, 4),
+('2026-02-07', '2026-02-09', 3, 3, 5, 6),
+('2026-02-10', '2026-02-11', 4, 4, 7, 8),
+('2026-02-12', '2026-02-13', 5, 5, 9, 10),
+('2026-02-14', '2026-02-15', 6, 6, 11, 12),
+('2026-02-16', '2026-02-17', 7, 7, 13, 14),
+('2026-02-18', '2026-02-19', 8, 8, 15, 16),
+('2026-02-20', '2026-02-21', 9, 9, 17, 18),
+('2026-02-22', '2026-02-23', 10, 10, 19, 20),
+('2026-02-24', '2026-02-25', 1, 11, 1, 2),
+('2026-02-26', '2026-02-27', 1, 12, 3, 4),
+('2026-02-28', '2026-03-01', 2, 13, 5, 6),
+('2026-03-02', '2026-03-03', 2, 14, 7, 8),
+('2026-03-04', '2026-03-05', 11, 15, 9, 10),
+('2026-03-06', '2026-03-07', 12, 16, 11, 12),
+('2026-03-08', '2026-03-09', 13, 17, 13, 14),
+('2026-03-10', '2026-03-11', 14, 18, 15, 16),
+('2026-03-12', '2026-03-13', 15, 19, 17, 18),
+('2026-03-14', '2026-03-15', 16, 20, 19, 20);
