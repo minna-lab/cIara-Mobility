@@ -1,3 +1,5 @@
+--Afficher les locations avec la marque du véhicule
+
 SELECT
     location.id_location,
     vehicule.marque,
