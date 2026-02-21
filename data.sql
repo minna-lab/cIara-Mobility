@@ -2,7 +2,6 @@
 -- PostgreSQL database dump
 --
 
-\restrict kumUI7Xsnnkd3i7GpSIMccDtfhOe2OEgiKqYZcsJW1pdyw50oykYVyeMzexTlZR
 
 -- Dumped from database version 18.2 (Postgres.app)
 -- Dumped by pg_dump version 18.2
@@ -354,5 +353,4 @@ SELECT pg_catalog.setval('public.station_id_station_seq', 20, true);
 -- PostgreSQL database dump complete
 --
 
-\unrestrict kumUI7Xsnnkd3i7GpSIMccDtfhOe2OEgiKqYZcsJW1pdyw50oykYVyeMzexTlZR
 

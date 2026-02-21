@@ -2,7 +2,6 @@
 -- PostgreSQL database dump
 --
 
-\restrict OYBqJ5Rwt04GAGGkCjkGtOlzsHe5HaCLYPuQbfypiPWHi7RaUhX4zLKi5HM4zi7
 
 -- Dumped from database version 18.2 (Postgres.app)
 -- Dumped by pg_dump version 18.2
@@ -289,5 +288,4 @@ ALTER TABLE ONLY public.location
 -- PostgreSQL database dump complete
 --
 
-\unrestrict OYBqJ5Rwt04GAGGkCjkGtOlzsHe5HaCLYPuQbfypiPWHi7RaUhX4zLKi5HM4zi7
 
