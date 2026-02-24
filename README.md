@@ -1,7 +1,7 @@
 
 # 🚗 Rapport d’Analyse  – Projet SQL cIara Mobility
 
-### 👩‍💻👨‍💻 Binôme : Antoine & Minna
+__👩‍💻👨‍💻 Binôme : Antoine & Minna__
 
 
 ## 🎯 Objectif du document
@@ -18,7 +18,7 @@ L’objectif principal de ce projet était de concevoir une base de données rel
 
 ## 🤝 A. Organisation du travail en binôme
 
-### 🔹 Méthodologie
+__🔹 Méthodologie__
 
 Nous avons adopté une méthode de travail progressive et structurée. Avant chaque étape, nous avons pris le temps de comprendre le problème clé afin de proposer une solution cohérente.
 
@@ -37,7 +37,7 @@ Cette approche nous a permis de sécuriser notre travail et de limiter les incoh
 Nous avons échangé régulièrement afin de comparer nos résultats, corriger les erreurs et améliorer notre compréhension des jointures SQL.
 
 
-### 🔹 Répartition des rôles
+__🔹 Répartition des rôles__
 
 Le projet a été réalisé par **Minna et Antoine**, avec une répartition claire et complémentaire.
 
@@ -54,7 +54,6 @@ Minna s’est principalement chargée de :
 * la gestion des erreurs liées aux contraintes,
 * la réalisation des **quêtes 1 et 3**.
 
----
 
 #### 👨‍💻 Antoine
 
@@ -72,7 +71,7 @@ Nous avons également travaillé ensemble sur :
 * la correction des erreurs SQL.
 
 
-### 🔹 Gestion de version (Git / GitHub)
+__🔹 Gestion de version (Git / GitHub)__
 
 Nous avons utilisé **Git et GitHub** afin de suivre l’évolution du projet.
 
@@ -85,7 +84,7 @@ Chaque quête a été enregistrée dans un fichier SQL distinct, ce qui nous a p
 Nous avons effectué des commits réguliers avec des messages explicites.
 
 
-### 🔹 Environnement de travail
+__🔹 Environnement de travail__
 
 Nous avons utilisé les outils suivants :
 
@@ -100,7 +99,7 @@ Cet environnement est proche de celui utilisé dans le monde professionnel.
 
 ## 🗄️ B. Analyse du Modèle de Données (MCD)
 
-### 🔹 Structure de la base
+__🔹 Structure de la base__
 
 La base repose sur quatre tables principales :
 
@@ -115,7 +114,7 @@ La table **location** est la table centrale car elle relie les autres.
 
 ---
 
-### 🔹 Relations entre les tables
+__🔹 Relations entre les tables__
 
 Chaque table possède une clé primaire :
 
@@ -144,7 +143,7 @@ Un véhicule peut être loué plusieurs fois au cours du temps, mais une locatio
 Enfin, les stations permettent de suivre les trajets et d’analyser les flux.
 
 
-### 🔹 Pertinence du modèle
+__🔹 Pertinence du modèle__
 
  La structuration de la base répond directement aux besoins métier de **cIAra Mobility** car elle sépare clairement les entités principales tout en les reliant de manière cohérente.
 
@@ -168,7 +167,7 @@ Le modèle est structuré, cohérent et adapté à une gestion professionnelle d
 
 ## ⚙️ C. Choix Techniques et Syntaxe SQL
 
-## 🔹 Stratégie de requête
+__🔹 Stratégie de requête__
 
 Pour les requêtes complexes, nous avons commencé par **décomposer le problème métier en étapes simples**.
 Nous avons d’abord lu la question pour bien comprendre le besoin. Ensuite, nous avons découpé le problème en petites étapes pour identifié les tables nécessaires, puis les relations entre elles, avant d’ajouter progressivement les conditions et les calculs.Cela nous a permis de ne pas être bloqués et de mieux contrôler les résultats.
@@ -186,7 +185,7 @@ Cette méthode progressive nous a permis :
 * de limiter les erreurs,
 * de valider chaque étape avant d’aller plus loin.
 
-## 🔹 Justification des commandes SQL
+__🔹 Justification des commandes SQL__
 
 Nous avons utilisé différentes commandes en fonction des besoins métier.
 
@@ -219,7 +218,7 @@ Par exemple, afficher uniquement les clients ayant réalisé plusieurs locations
 Ces commandes ont permis de trier les résultats et de mettre en avant les informations les plus pertinentes.
 
 
-## 🔹 Logique de filtrage
+__🔹 Logique de filtrage__
 
 Nous avons traduit les besoins métier en conditions techniques simples.
 
@@ -238,8 +237,7 @@ Cette démarche nous a aidés à développer une vision structurée et professio
 
 
 ## 🚧 D. Difficultés rencontrées et solutions
-
-### ❌ Importation de la base dans pgAdmin
+__❌ Importation de la base dans pgAdmin__
 
 L’une des principales difficultés a été l’importation des données dans PostgreSQL.
 
@@ -274,7 +272,7 @@ Cette démarche nous a permis de :
 * renforcer notre autonomie.
 
 
-### ❌ Contraintes et relations
+__❌ Contraintes et relations__
 
 Les clés étrangères ont parfois provoqué des erreurs lors des suppressions ou insertions.
 
@@ -286,7 +284,7 @@ Les clés étrangères ont parfois provoqué des erreurs lors des suppressions o
 
 ---
 
-### ❌ Compréhension des jointures
+ __❌ Compréhension des jointures__
 
 Au début, les jointures complexes étaient difficiles.
 
