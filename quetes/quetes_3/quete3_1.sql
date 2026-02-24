@@ -1,7 +1,6 @@
 
 --Afficher les locations avec le nom du client
 
-Version simple :
 SELECT
     location.id_location,
     location.date_debut,
