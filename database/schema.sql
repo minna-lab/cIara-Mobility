@@ -1,13 +1,11 @@
---
 -- PostgreSQL database dump
---
 
-\restrict PG2dfC44k5gVDab7WaeHLyRyVqwEKzk7A29nOCDrgMd9WwTgpjPY0C5g9nZaLfP
+
 
 -- Dumped from database version 18.2 (Postgres.app)
 -- Dumped by pg_dump version 18.2
 
--- Started on 2026-02-21 12:28:01 CET
+-- Started on 2026-02-21 12:33:01 CET
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -283,11 +281,10 @@ ALTER TABLE ONLY public.location
     ADD CONSTRAINT location_id_vehicule_fkey FOREIGN KEY (id_vehicule) REFERENCES public.vehicule(id_vehicule);
 
 
--- Completed on 2026-02-21 12:28:15 CET
+-- Completed on 2026-02-21 12:33:02 CET
 
 --
 -- PostgreSQL database dump complete
 --
 
-\unrestrict PG2dfC44k5gVDab7WaeHLyRyVqwEKzk7A29nOCDrgMd9WwTgpjPY0C5g9nZaLfP
 
